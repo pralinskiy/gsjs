@@ -163,11 +163,21 @@ obj2 = {
 console.table(obj2)
 */
 
+//шаблонные строки
+
+function function1() {
+    a = true
+    
+}
+function1()
 
 
+console.log(`${function1}`)
 
 
+let string = '${' + `${a}` + '}' + `                            ${1} -  + $     ${2}    ` + " " + '${}' + `         +  ${function1}`
 
+console.log(string)
 
 
 
