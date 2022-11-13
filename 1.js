@@ -112,7 +112,7 @@ function secondFunction(firstFunction) {
 
 firstFunction()
 */
-
+/*
 function f1() {
     b = true
     function f2() {
@@ -125,4 +125,32 @@ f1()
  
 console.log(b)
 console.log(a)
+*/
+/*
+let a = 0;
+console.log(a++)
+console.log(++a)
+*/
+
+//typeof 8.8
+
+//console.log(!!typeof 0)
+
+
+
+//выполнение функции в зависимости от других переменных
+
+let varTrue = 1;
+let varFalse = 0;
+
+varTrue && console.log('done')
+varFalse && console.log('done')
+
+
+
+
+
+
+
+
 
