@@ -139,12 +139,29 @@ console.log(++a)
 
 
 //выполнение функции в зависимости от других переменных
-
+/*
 let varTrue = 1;
 let varFalse = 0;
 
 varTrue && console.log('done')
 varFalse && console.log('done')
+*/
+
+/*
+obj1 = {
+    prop1: 1,
+    prop2: 2,
+}
+
+obj2 = {
+    ...obj1,
+    prop3: 3,
+    prop4: 4,
+    prop5: 5,
+}
+
+console.table(obj2)
+*/
 
 
 
