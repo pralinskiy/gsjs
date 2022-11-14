@@ -165,6 +165,7 @@ console.table(obj2)
 
 //шаблонные строки
 
+/*
 function function1() {
     a = true
     
@@ -178,6 +179,50 @@ console.log(`${function1}`)
 let string = '${' + `${a}` + '}' + `                            ${1} -  + $     ${2}    ` + " " + '${}' + `         +  ${function1}`
 
 console.log(string)
+*/
+
+
+/*
+const fn = (a, b) => {
+    return a + b
+}
+
+
+
+setTimeout(() => {
+    console.log("message ")
+}, 3000)
+
+const fnX = a => a*a
+
+console.log(fnX(5))
+
+//setTimeout(a => a*a, 2000)
+
+
+
+//-------
+
+const newPost = (post, date = Date()) => ({
+    ...post,
+    date, //date: date
+})
+
+const post = {
+    id: 1,
+    author: 'none'
+}
+
+console.log(newPost(post))
+
+*/
+
+
+
+
+
+
+
 
 
 
