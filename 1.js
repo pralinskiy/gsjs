@@ -218,6 +218,143 @@ console.log(newPost(post))
 */
 
 
+//-----------------------
+//exceptions
+
+/*
+try {
+    throw new Error("custom error's text")
+}
+catch(error) {
+    console.error(error)
+}
+*/
+
+//инструкции (let a) (выполняет действие)
+
+//есть выражения а есть инструкции
+
+
+//выражение не может быть аргументом функции
+
+
+
+//массивы----------------------------
+
+/*
+
+const array1 = [1, 'abc', true]
+
+const array2 = new Array(1, 'abc', true)
+
+console.log(array1)
+console.log('-----------')
+console.log(array2)
+//console.log('-----------')
+//console.log(new Object(array1[1]))
+
+// это объект со свойствами в виде содержимого
+
+
+array1
+
+globalThis.console.log(array1 != array2)
+
+//массив так как это объект – ссылочный
+
+*/
+
+/*
+array = new Array(1, 'abc', true)
+console.log(array.length = 7)
+console.log(array.length = 2)
+console.log(array)
+
+array[5] = '444'
+array[6] = '666'
+
+console.log(array)
+
+array.pop()
+array.unshift(100)
+array.unshift(1000)
+array.shift()
+array.push(87)
+
+console.log(array)
+
+//они мутируют массив
+
+
+
+
+array.forEach(element => console.log(element)); //колбэк функция которая (это тут не важно) неявно возвращает функцию (без фигурных скобок)
+
+
+const amap = array.map(element => element*10) //тут важно так как мэп возвращает новый объект то есть массив
+
+console.log(amap)
+
+const amap2 = array.map(element => {
+    element*10
+}) //тут важно так как мэп возвращает новый объект то есть массив
+
+console.log(amap2) //тут нет ретурн поэтому возвращается андефайнд
+//а там ретурн не важен
+
+
+const amap3 = array.map(function(element) {
+    return element*10
+}) //тут анонимная функция
+
+console.log(amap3)
+
+*/
+//деструктуризация объектов
+
+const obj = {
+    f: 1,
+    s: 'abc',
+    t: true,
+}
+
+const { f, t } = obj //мы создаем переменные которые хранят в себе свойства какого то объекта
+
+console.log(t)
+
+
+//деструктуризация массива
+
+const fruits = ['apple', 'banana']
+
+const[one, two] = fruits //интерпритатор берет по порядку индексы 0 1 2 и тд важно учитывать порядок
+
+console.log(two)
+
+//деструктуризация в функциях
+
+const userObj = {
+    name: 'rodion',
+    commentsQty: 473,
+    hasSignedAgreemant: true,
+}
+
+
+const userInfo = ({ name, commentsQty }) => {
+    if(!commentsQty) {
+        return `user ${name} is empty`
+    }
+    return `user ${name} has ${commentsQty}`
+}
+
+console.log(userInfo(userObj));
+
+
+
+
+
+
+
 
 
 
