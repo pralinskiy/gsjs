@@ -312,6 +312,8 @@ console.log(amap3)
 */
 //деструктуризация объектов
 
+
+/*
 const obj = {
     f: 1,
     s: 'abc',
@@ -327,7 +329,7 @@ console.log(t)
 
 const fruits = ['apple', 'banana']
 
-const[one, two] = fruits //интерпритатор берет по порядку индексы 0 1 2 и тд важно учитывать порядок
+const [one, two] = fruits //интерпритатор берет по порядку индексы 0 1 2 и тд важно учитывать порядок
 
 console.log(two)
 
@@ -338,20 +340,42 @@ const userObj = {
     commentsQty: 473,
     hasSignedAgreemant: true,
 }
+ 
 
-
-const userInfo = ({ name, commentsQty }) => {
+const userInfo = ({ nama, commentsQty }) => {
     if(!commentsQty) {
-        return `user ${name} is empty`
+        return `user ${nama} is empty`
     }
-    return `user ${name} has ${commentsQty}`
+    return `user ${nama} has ${commentsQty}`
 }
 
 console.log(userInfo(userObj));
+*/
+
+//---
 
 
+const object = {
+    x: 1,
+    y: 2,
+    z: 3,
+}
 
 
+Object.keys(object).forEach((key) => { //Object.(values/keys) возвращает массив
+    console.log(key)
+})
+
+
+for(key in object) { //так же работает для массива
+
+    console.log(key)
+}
+
+
+for(i of "iterable") { //так же для массива но НЕ для объектов
+    console.log(i)
+}
 
 
 
